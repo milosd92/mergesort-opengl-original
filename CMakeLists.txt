@@ -47,7 +47,7 @@ set(SOURCE_FILES src/main.cpp src/camera.h src/cameraHandler.cpp src/meni.cpp sr
 
 # Copy all needed resources to build directory (Debug, Release)
 message(STATUS "Copying resources ..")
-file(GLOB resDir res/kvadrat.vs res/kvadrat.fs)
+file(GLOB resDir res/kvadrat.vert res/kvadrat.frag)
 file(COPY ${resDir} DESTINATION res)
 
 # End of CMAKE
